@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "The linear Kalman Filter implementation and interactive simulation in this project are based on the following work. If you use or reference this project, please cite accordingly."
+
+references:
+  - type: software
+    title: "Kalman-Filter-derivation-and-implementation"
+    authors:
+      - family-names: cangozpi
+        given-names: cangozpi
+        alias: cangozpi
+    url: "https://github.com/cangozpi/Kalman-Filter-derivation-and-implementation"
+    repository-code: "https://github.com/cangozpi/Kalman-Filter-derivation-and-implementation"
+    license: "N/A"
+    notes: >
+      The linear Kalman Filter class structure and the interactive pygame simulation
+      skeleton were taken from this repository. The original implementation used a
+      constant velocity motion model (state: [px, py, vx, vy]). This project
+      extends it to a constant acceleration model (state: [px, py, vx, vy, ax, ay])
+      with the process noise covariance matrix Q derived analytically from unmodeled
+      jerk. The UKF and CTRV motion model were developed independently.
